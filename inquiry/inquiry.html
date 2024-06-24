@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inquiry.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Cookie&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>inquiry</title>
+</head>
+<body>
+
+    <div class="top_bar">
+        <img src="..\icon.jpeg" class="icon" width="150em" height="60em"/>
+        <a href="..\index.html" class="item" >HOME</a>
+        <hr/>
+        <a href="..\aboutus\aboutus.html" class="item" >ABOUT US</a>
+        <hr/>
+        <div class="dropdown">
+            <a href="..\products\products.html" class="item">PRODUCTS</a> 
+            <div class="dropdown-content">
+                <a href="..\products\products.html#salt">Himalayan Salt</a>
+                <a href="..\products\products.html#poppers">Party Items</a>
+            </div>
+        </div>
+        <hr/>
+        <a href="" class="item" >CERTIFICATES</a> <!--insert link here for certificates-->
+        <hr/>
+        <a href="inquiry\inquiry.html" class="item">INQUIRY</a> <!--insert link here for inquiry page-->
+        </div>
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!--<div class="rest_of_the_page">-->
+        <hr class="hline">
+    <div class="container">
+        <h1>Inquiry Form</h1>
+        <form action="submit_inquiry.php" method="post"> <!-- to submit the info in this form to submit_inquiry.php using post method-->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required> <!--required means you cannot submit without filling this-->
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea> <!--rows is the space given to to type messaage-->
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Inquiry</button>
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
